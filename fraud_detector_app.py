@@ -448,7 +448,7 @@ if submitted:
     }])
 
     prediction = pipeline.predict(input_data)[0]
-    result = "🚨 Fraud Detected!" if prediction == 1 else "✅ Transaction is Legitimate"
+    result = " Fraud Detected!" if prediction == 1 else "Transaction is Legitimate"
     st.success(result)
 
 
